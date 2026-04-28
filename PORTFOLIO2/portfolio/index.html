@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muneeb Mehmood — Data Analyst</title>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <a href="#home" class="nav__logo">M<span>ehmood</span><span style="color:var(--accent)">.</span></a>
+    <ul class="nav__links">
+      <li><a href="#home" class="nav__link active">Home</a></li>
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#work" class="nav__link">Work</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="assets/pdf/cv.pdf" download class="nav__cta">Download CV</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" style="position:relative;">
+    <div class="hero">
+      <div class="hero__left">
+        <p class="hero__greeting"><span></span>Hello, I'm</p>
+        <h1 class="hero__name">Muneeb<br><em>Mehmood</em></h1>
+        <div class="hero__role">
+          <span class="hero__role-badge">Data Analyst</span>
+          <span class="hero__role-line"></span>
+        </div>
+        <p class="hero__desc">
+          Turning raw data into <strong>actionable insights</strong> through
+          <strong>Power BI</strong>, <strong>Python</strong>, <strong>SQL</strong> & <strong>Excel</strong>.
+          Helping businesses make smarter, data-driven decisions.
+        </p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn-primary"><i class='bx bx-bar-chart-alt-2'></i> View Projects</a>
+          <a href="#contact" class="btn btn-outline"><i class='bx bx-envelope'></i> Let's Talk</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num" data-count="1">0</div>
+            <div class="stat__label">Year Exp.</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="5">0</div>
+            <div class="stat__label">Projects Done</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="4">0</div>
+            <div class="stat__label">Core Tools</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__img-wrap">
+          <div class="hero__img-bg"></div>
+          <img src="assets/img/myphoto2.png" alt="Muneeb Mehmood" class="hero__img" onerror="this.style.display='none';this.parentElement.querySelector('.hero__img-placeholder').style.display='flex'">
+          <div class="hero__img-placeholder" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;background:var(--card);border-radius:6px;font-size:5rem;color:var(--accent)"><i class='bx bx-user'></i></div>
+          <div class="hero__img-overlay"></div>
+          <div class="hero__floating-card card-1">
+            <div class="card-label">Avg. Insight Time</div>
+            <div class="card-val">↓ 40%</div>
+          </div>
+          <div class="hero__floating-card card-2">
+            <div class="card-label">Dashboards Built</div>
+            <div class="card-val">5+</div>
+          </div>
+        </div>
+        <div class="hero__social">
+          <a href="https://www.linkedin.com/in/muneeb-mehmood01" target="_blank" class="hero__social-link"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/MuneebMehmood260" target="_blank" class="hero__social-link"><i class='bx bxl-github'></i></a>
+          <a href="https://www.fiverr.com/s/42VoAXd" target="_blank" class="hero__social-link"><i class='bx bxl-fiverr'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker__track" id="ticker">
+      <span class="ticker__item"><i class='bx bx-data'></i> Power BI</span>
+      <span class="ticker__item"><i class='bx bx-code-alt'></i> Python</span>
+      <span class="ticker__item"><i class='bx bx-table'></i> SQL</span>
+      <span class="ticker__item"><i class='bx bx-spreadsheet'></i> Excel</span>
+      <span class="ticker__item"><i class='bx bx-line-chart'></i> Data Visualization</span>
+      <span class="ticker__item"><i class='bx bx-analyse'></i> EDA</span>
+      <span class="ticker__item"><i class='bx bxl-python'></i> Pandas</span>
+      <span class="ticker__item"><i class='bx bx-stats'></i> Dashboard Design</span>
+      <span class="ticker__item"><i class='bx bx-brain'></i> Business Intelligence</span>
+      <span class="ticker__item"><i class='bx bx-data'></i> Power BI</span>
+      <span class="ticker__item"><i class='bx bx-code-alt'></i> Python</span>
+      <span class="ticker__item"><i class='bx bx-table'></i> SQL</span>
+      <span class="ticker__item"><i class='bx bx-spreadsheet'></i> Excel</span>
+      <span class="ticker__item"><i class='bx bx-line-chart'></i> Data Visualization</span>
+      <span class="ticker__item"><i class='bx bx-analyse'></i> EDA</span>
+      <span class="ticker__item"><i class='bx bxl-python'></i> Pandas</span>
+      <span class="ticker__item"><i class='bx bx-stats'></i> Dashboard Design</span>
+      <span class="ticker__item"><i class='bx bx-brain'></i> Business Intelligence</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <div class="hero__img-wrap about__img-wrap reveal" style="height:420px;width:100%;">
+        <div class="hero__img-bg"></div>
+        <img src="assets/img/myphoto.png" alt="About Muneeb" class="hero__img" onerror="this.style.display='none'">
+        <!-- <div class="hero__img-overlay"></div> -->
+        <!-- <div class="about__img-accent"></div> -->
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <p class="section-label">My Intro</p>
+        <h2 class="section-title">About<br>Me</h2>
+        <div class="about__boxes">
+          <div class="about__box">
+            <i class='bx bx-award'></i>
+            <div class="about__box-num">1+</div>
+            <div class="about__box-label">Years Exp.</div>
+          </div>
+          <div class="about__box">
+            <i class='bx bx-briefcase-alt'></i>
+            <div class="about__box-num">5+</div>
+            <div class="about__box-label">Projects</div>
+          </div>
+          <div class="about__box">
+            <i class='bx bx-support'></i>
+            <div class="about__box-num">24/7</div>
+            <div class="about__box-label">Available</div>
+          </div>
+        </div>
+        <p class="about__text">
+          Motivated Data Analyst skilled in <strong style="color:var(--text)">Power BI</strong>, <strong style="color:var(--text)">Excel</strong>, <strong style="color:var(--text)">SQL</strong>, and <strong style="color:var(--text)">Python</strong>.
+          Experienced in creating dashboards and extracting actionable insights from data to support
+          business decisions. Passionate about turning complex datasets into clear visual stories.
+        </p>
+        <a href="#contact" class="btn btn-primary"><i class='bx bx-send'></i> Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills-section">
+    <div class="skills-inner">
+      <div class="skills-header reveal">
+        <p class="section-label" style="justify-content:center">My Abilities</p>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-category reveal">
+          <div class="skill-category__icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+          <h3 class="skill-category__title">Data Analysis & BI</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">Power BI</span><span class="skill-bar__pct">90%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">Microsoft Excel</span><span class="skill-bar__pct">88%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">SQL Database</span><span class="skill-bar__pct">75%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal" style="transition-delay:0.1s">
+          <div class="skill-category__icon"><i class='bx bxl-python'></i></div>
+          <h3 class="skill-category__title">Programming & Libraries</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">Python</span><span class="skill-bar__pct">85%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">Pandas</span><span class="skill-bar__pct">82%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__top"><span class="skill-bar__name">NumPy / Matplotlib</span><span class="skill-bar__pct">70%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal" style="transition-delay:0.2s">
+          <div class="skill-category__icon"><i class='bx bx-palette'></i></div>
+          <h3 class="skill-category__title">Tools & Platforms</h3>
+          <div class="skill-tools">
+            <span class="skill-tool">DAX</span>
+            <span class="skill-tool">Power Query</span>
+            <span class="skill-tool">Pivot Tables</span>
+            <span class="skill-tool">VLOOKUP</span>
+            <span class="skill-tool">Jupyter</span>
+            <span class="skill-tool">MySQL</span>
+            <span class="skill-tool">Seaborn</span>
+            <span class="skill-tool">Plotly</span>
+            <span class="skill-tool">Google Sheets</span>
+            <span class="skill-tool">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work-section">
+    <div class="work-header">
+      <div>
+        <p class="section-label">My Portfolio</p>
+        <h2 class="section-title">Recent Works</h2>
+      </div>
+      <div class="work-filters">
+        <button class="work-filter active" data-filter="all">All</button>
+        <button class="work-filter" data-filter="bi">Power BI</button>
+        <button class="work-filter" data-filter="python">Python</button>
+      </div>
+    </div>
+    <div class="work-grid" id="workGrid">
+
+      <div class="work-card reveal" data-cat="bi">
+        <div class="work-card__img">
+          <img src="assets/img/Motorola_sales dashboard.png" alt="Sales Dashboard" onerror="this.parentElement.style.background='#0d1520';this.style.display='none'">
+          <span class="work-card__tag tag-bi">Power BI</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">Motorola Sales Dashboard</h3>
+          <p class="work-card__desc">Interactive sales performance dashboard tracking KPIs, revenue trends, and regional breakdown using DAX measures.</p>
+          <a href="https://github.com/MuneebMehmood260/Power-Bi-Dashboard" target="_blank" class="work-card__link">View Report <i class='bx bx-arrow-back' style="transform:rotate(180deg)"></i></a>
+        </div>
+      </div>
+
+      <div class="work-card reveal" data-cat="bi" style="transition-delay:0.1s">
+        <div class="work-card__img">
+          <img src="assets/img/ecommerce_sales.PNG" alt="Ecommerce Sales" onerror="this.parentElement.style.background='#0d1520';this.style.display='none'">
+          <span class="work-card__tag tag-bi">Power BI</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">Ecommerce Sales Dashboard</h3>
+          <p class="work-card__desc">Comprehensive ecommerce analytics with customer segmentation, product performance, and month-over-month comparisons.</p>
+          <a href="https://github.com/MuneebMehmood260/Power-Bi-Dashboard" target="_blank" class="work-card__link">View Report <i class='bx bx-arrow-back' style="transform:rotate(180deg)"></i></a>
+        </div>
+      </div>
+
+      <div class="work-card reveal" data-cat="bi" style="transition-delay:0.2s">
+        <div class="work-card__img">
+          <img src="assets/img/HR Analytics dashboard.jpeg" alt="HR Dashboard" onerror="this.parentElement.style.background='#0d1520';this.style.display='none'">
+          <span class="work-card__tag tag-bi">Power BI</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">HR Analytics Dashboard</h3>
+          <p class="work-card__desc">HR workforce analytics covering attrition rates, department performance, salary distribution, and employee demographics.</p>
+          <a href="https://github.com/MuneebMehmood260/Power-Bi-Dashboard" target="_blank" class="work-card__link">View Report <i class='bx bx-arrow-back' style="transform:rotate(180deg)"></i></a>
+        </div>
+      </div>
+
+      <div class="work-card reveal" data-cat="python" style="transition-delay:0.3s">
+        <div class="work-card__img">
+          <img src="assets/img/titanic.PNG" alt="Titanic EDA" onerror="this.parentElement.style.background='#0d1520';this.style.display='none'">
+          <span class="work-card__tag tag-python">Python</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">Titanic EDA (Python)</h3>
+          <p class="work-card__desc">Exploratory data analysis on the Titanic dataset — uncovering survival patterns using Pandas, Seaborn & Matplotlib.</p>
+          <a href="https://github.com/MuneebMehmood260/Power-Bi-Dashboard" target="_blank" class="work-card__link">View Analysis <i class='bx bx-arrow-back' style="transform:rotate(180deg)"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Contact<br>Me</h2>
+        <div class="contact-cards">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muneebmehmood260@gmail.com" target="_blank" class="contact-card">
+            <div class="contact-card__icon"><i class='bx bx-mail-send'></i></div>
+            <div>
+              <div class="contact-card__label">Email</div>
+              <div class="contact-card__val">muneebmehmood260@gmail.com</div>
+            </div>
+            <div class="contact-card__btn">Write <i class='bx bx-right-arrow'></i></div>
+          </a>
+          <a href="https://wa.me/923064705597?text=Hi%20Muneeb" target="_blank" class="contact-card">
+            <div class="contact-card__icon"><i class='bx bxl-whatsapp'></i></div>
+            <div>
+              <div class="contact-card__label">WhatsApp</div>
+              <div class="contact-card__val">+92 306 470 5597</div>
+            </div>
+            <div class="contact-card__btn">Chat <i class='bx bx-right-arrow'></i></div>
+          </a>
+          <a href="https://wa.me/923064705597?text=Hi%20Muneeb" target="_blank" class="contact-card">
+            <div class="contact-card__icon"><i class='bx bxl-fiverr'></i></div>
+            <div>
+              <div class="contact-card__label">Whatsapp</div>
+              <div class="contact-card__val">Order a Custom Project</div>
+            </div>
+            <div class="contact-card__btn">Order <i class='bx bx-right-arrow'></i></div>
+          </a>
+          <a href="https://www.linkedin.com/in/muneeb-mehmood01" target="_blank" class="contact-card">
+            <div class="contact-card__icon"><i class='bx bxl-linkedin'></i></div>
+            <div>
+              <div class="contact-card__label">LinkedIn</div>
+              <div class="contact-card__val">muneeb-mehmood01</div>
+            </div>
+            <div class="contact-card__btn">Connect <i class='bx bx-right-arrow'></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:1.5rem;">Send a Message</h3>
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-input" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="What can I help you with?"></textarea>
+          </div>
+          <button class="btn btn-primary" style="align-self:flex-start"><i class='bx bx-send'></i> Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer__logo">Muneeb<span style="color:var(--text)">.</span></span>
+      <ul class="footer__links">
+        <li><a href="#home" class="footer__link">Home</a></li>
+        <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#skills" class="footer__link">Skills</a></li>
+        <li><a href="#work" class="footer__link">Work</a></li>
+        <li><a href="#contact" class="footer__link">Contact</a></li>
+      </ul>
+      <span class="footer__copy">© 2026 Muneeb Mehmood</span>
+    </div>
+  </footer>
+
+  <script>
+    // Cursor glow
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => ro.observe(el));
+
+    // Skill bars
+    const bars = document.querySelectorAll('.skill-bar__fill');
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting) {
+          e.target.style.width = e.target.dataset.width + '%';
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(b => barObs.observe(b));
+
+    // Counter animation
+    const counters = document.querySelectorAll('.stat__num[data-count]');
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting) {
+          const target = +e.target.dataset.count;
+          let cur = 0;
+          const step = target / 30;
+          const timer = setInterval(() => {
+            cur += step;
+            if(cur >= target) { e.target.textContent = target + '+'; clearInterval(timer); }
+            else { e.target.textContent = Math.floor(cur); }
+          }, 40);
+          counterObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObs.observe(c));
+
+    // Nav active link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav__link');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => {
+        if(window.scrollY >= s.offsetTop - 100) cur = s.id;
+      });
+      navLinks.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + cur);
+      });
+    });
+
+    // Work filter
+    const filters = document.querySelectorAll('.work-filter');
+    const cards = document.querySelectorAll('.work-card');
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(card => {
+          const show = f === 'all' || card.dataset.cat === f;
+          card.style.opacity = show ? '1' : '0';
+          card.style.transform = show ? '' : 'scale(0.95)';
+          card.style.pointerEvents = show ? '' : 'none';
+          card.style.transition = 'all 0.35s';
+          card.style.display = show ? '' : 'none';
+          if(show) { setTimeout(() => { card.style.opacity='1'; card.style.transform=''; }, 10); }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
